@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Web Page</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/4cc0d2d0c9.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <a name="home"></a>
+    <div class="header">
+        <div class="container">
+            <div class="navbar">
+                <nav>
+                    <ul id="nav">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#outputs">Outputs</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                        <li><a href="#feedback">Feedback</a></li>
+                    </ul>
+                </nav>  
+            </div>    
+                 <div class="content">
+                    <h1>MY WEBPAGE</h1>
+                    <p>HI! I'm Hannah Lorraine Welcome to my Webpage </p>
+                </div>
+        </div>     
+    </div>
+<!-- -----------about---------- -->
+<a name="About"></a>
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                 <div class="about-col-1">
+                    <img src="images/user.jpg">
+                 </div>
+                    <div class="about-col-2">
+                        <h2 class="sub-title">ABOUT ME</h2>
+                        <p>I'm Hannah Lorraine Lagamia<br>18 yrs old<br>Live in Malapit San Isidro Nueva Ecija</p>
+                    
+                         <div class="tab-title">
+                            <p class="tab-links active-link" onclick="opentab('hobbies')">Hobbies</p>
+                            <p class="tab-links" onclick="opentab('favorites')">Favorites</p>
+                            <p class="tab-links" onclick="opentab('education')">Education</p>
+                         </div>
+                            <div class="tab-contents active-tab" id="hobbies">
+                                <ul>
+                                    <li><span>Passtime</span><br>Reading Novel</li>
+                                    <li><span>Sport</span><br>Badminton</li>
+                                    <li><span>Other</span><br>Sleeping</li>
+                                </ul>
+                            </div>
+                            <div class="tab-contents" id="favorites">
+                                <ul>
+                                    <li><span>Sweets</span><br>Chocolate and Gummies</li>
+                                    <li><span>Snacks</span><br>Burger and Pizza</li>
+                                    <li><span>Food</span><br>Streetfoods</li>
+                                </ul>
+                            </div>
+                                <div class="tab-contents" id="education">
+                                    <ul>
+                                        <li><span>College</span><br>Nueva Ecija University of Science and Technology</li>
+                                        <li><span>Highschool</span><br>Juan R. Liwag Memorial Highschool</li>
+                                        <li><span>Elementary</span><br>San Isidro Central School</li>
+                                    </ul>
+                                </div>
+                    </div>
+            </div>
+        </div>
+    </div>
+<!-----------outputs----------->
+<a name="outputs"></a>
+<div id="outputs">
+    <div class="container">
+        <h2 class="sub-title">My Outputs</h2>
+            <div class="outputs">
+                <div class="layer">
+                    <img src="images/books.jpg">
+                    <h2>Let's Escape the Reality</h2>
+                    <p>Books will take us to  places we're never been to and allows us to experience scenarios that exist only in our  dreams</p>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div> 
+
+<!-----------contact----------->
+<a name="contact"></a>
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h2 class="sub-title">CONTACT</h2>
+                <p><i class="fas fa-paper-plane"></i>lagamiah@gmail.com</p>
+                <p><i class="fas fa-square-phone"></i>0952635026</p> 
+                <div class="social-icons">
+                    <a href="https://facebook.com/"><i class="fab fa-facebook"></i></a>
+                    <a href="https://instagram.com/"><i class="fab fa-instagram"></i></a>
+                </div>            
+            </div>
+            <div class="contact-right">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3848.3726902981543!2d120.92067297402367!3d15.301968259523003!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397203f200d74c5%3A0x25077eda0b612011!2sHerrera%20St%2C%20San%20Isidro%2C%20Nueva%20Ecija!5e0!3m2!1sen!2sph!4v1684175468336!5m2!1sen!2sph" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>    
+    </div>
+</div>
+<!-----------feedback----------->
+<a name="feedback"></a>
+<div id="feedback">
+    <div class="container">
+        <div class="row">
+            <div class="feedback-left">
+                <h2 class="sub-title">FEEDBACK</h2>
+                <a href="feedback.html"></a>
+                <p><i class="fas fa-paper-plane"></i>lagamiah@gmail.com</p>
+                <p><i class="fas fa-square-phone"></i>0952635026</p>
+                <div class="social-icons">
+                    <a href="https://facebook.com/"><i class="fab fa-facebook"></i></a>
+                    <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
+                </div>            
+            </div>
+            <div class="feedback-right"> 
+                <form action="feedback.html">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="4" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+            
+            </div>  
+            </div>        
+        </div>
+    </div>
+</div>
+
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+</body>
+</html>
